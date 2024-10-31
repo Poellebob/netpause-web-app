@@ -2,3 +2,21 @@
     font-size: larger;
     color: blue;
 }
+
+.Knap{
+    background-color: blue;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.Tekst{
+    display: block;
+    margin: 50px;
+    font-size: larger;
+}
