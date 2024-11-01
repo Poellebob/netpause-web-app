@@ -1,6 +1,8 @@
 .Overskrift{
     font-size: larger;
-    color: blue;
+    color: rgb(0, 0, 0);
+    align-self: center;
+    justify-self: center;
 }
 
 .Knap{
@@ -29,6 +31,8 @@
     margin: auto;
 }
 
+
+
 header{
     background-color: rgb(41, 197, 236);
     height: 15vh;
@@ -40,10 +44,13 @@ header{
     min-height: 100vh;
     
 }
-.menuButton{
+
+
+
+.menuButton2{
     color: #ffffff;
-    width: 200px;
-    height: 50px;
+    width: 80%;
+    height: 20vh;
     border-radius: 10px;
     font-size: 20px;
     background-color: rgba(0, 0, 0, 0.55);
@@ -51,4 +58,46 @@ header{
     justify-self: center;
     display: block;
     margin: auto;
+    position: relative;
+    z-index: 1;
 }
+
+  
+.image-container {
+    position: relative;
+    width: 100%; /* adjust to your needs */
+    height: 300px; /* adjust to your needs */
+    border: 5px solid #000000;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+    display: block;
+    margin: auto;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    color: white;
+    position: absolute;
+    top: 20px; /* adjust to your needs */
+    left: 20px; /* adjust to your needs */
+    right: 20px; /* adjust to your needs */
+    bottom: 20px; /* adjust to your needs */
+    background-color: rgba(0, 0, 0, 0.514); /* adjust to your needs */
+    padding: 20px; /* adjust to your needs */
+    text-align: center;
+  }
+  
+  .text-overlay h2 {
+    margin-bottom: 10px; /* adjust to your needs */
+  }
+  
+  .text-overlay p {
+    font-size: 18px; /* adjust to your needs */
+    line-height: 1.5; /* adjust to your needs */
+  }
