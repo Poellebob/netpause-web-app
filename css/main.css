@@ -1,6 +1,6 @@
 .Overskrift{
     font-size: larger;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 252, 252);
     align-self: center;
     justify-self: center;
 }
@@ -35,19 +35,30 @@
 
 
 
-header{
-    background-color: rgb(41, 197, 236);
-    height: 15vh;
-} 
+
+.header {
+  z-index: 2;
+  background: linear-gradient(to bottom, #ffffff, #646464); /* replace with your desired colors */
+  height: 15vh;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  margin: auto;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
 
   body {
-    background: linear-gradient(to bottom, #c4f8fc, #d1d2ed); /* replace with your desired colors */
+    background: linear-gradient(to bottom, #000000, #000000); /* replace with your desired colors */
     background-repeat: no-repeat;
     min-height: 100vh;
     
 }
-
-
 
 .menuButton2{
     color: #ffffff;
@@ -69,7 +80,6 @@ header{
     position: relative;
     width: 100%; /* adjust to your needs */
     height: 300px; /* adjust to your needs */
-    border: 5px solid #000000;
     border-radius: 10px;
     align-self: center;
     justify-self: center;
@@ -92,7 +102,7 @@ header{
     left: 20px; /* adjust to your needs */
     right: 20px; /* adjust to your needs */
     bottom: 20px; /* adjust to your needs */
-    background-color: rgba(0, 0, 0, 0.514); /* adjust to your needs */
+    background-color: rgba(0, 0, 0, 0.658); /* adjust to your needs */
     padding: 20px; /* adjust to your needs */
     text-align: center;
     border-radius: 20px;
@@ -164,6 +174,7 @@ header{
     position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 5px;
     object-fit: cover;
     float: right;
   }
@@ -201,4 +212,51 @@ header{
     border-radius: 5px; /* add a rounded corner to the textarea */
     font-size: 16px; /* set the font size to 16px */
     font-family: Arial, sans-serif; /
+
+
+
+  }
+  .box {
+    position: relative;
+    top: 80vh; /* position the box below the video */
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .box-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .box-picture {
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .box-text {
+
+    flex: 1;
+    color: white;
+    margin-left: 20px; 
+  }
+  
+  .box-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .box-text p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .box-text hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
   }
