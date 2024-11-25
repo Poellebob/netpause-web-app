@@ -12,3 +12,10 @@ document.addEventListener('mousemove', (event) => {
   }
 });
 
+// Add event listener to toggle the side menu
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.side-menu').classList.toggle('open');
+  document.querySelector('.menu-items').classList.toggle('show');
+  this.classList.toggle('rotate');
+});
+
